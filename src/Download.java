@@ -254,7 +254,10 @@ public class Download {
 	}
 
 	if (!downloadAll) {
-	    downloadEprintFile(b, osFormatFn(key + "v" + maxver + ".pdf"),
+	    //downloadEprintFile(b, osFormatFn(key + "v" + maxver + ".pdf"),
+	    //version breaks autofind in Jabref, so just overwrite with the new version
+	    //unless we select to download all versions.
+	    downloadEprintFile(b, osFormatFn(key + ".pdf"),
 			       "http://arxiv.org/pdf/" + id + "v" + maxver, "arXiv v" + maxver);
 	} else {
 	    for (int vid=1;vid<=maxver;vid++) {
