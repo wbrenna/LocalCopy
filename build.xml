@@ -10,7 +10,7 @@
 	<property name="build.lib" value="dist" />
 	<property name="build.classes" value="${build.dir}/cls" />
 
-	<property name="jabref.dir" value="../../jabref" />
+	<property name="jabref.dir" value="../jabref/jabref" />
 
 	<property name="version" value="2.6" />
 	<property name="jar" value="${build.lib}/${ant.project.name}-${version}.jar" />

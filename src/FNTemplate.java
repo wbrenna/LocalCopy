@@ -37,9 +37,13 @@ import net.sf.jabref.labelPattern.LabelPatternUtil;
 public class FNTemplate {
 
     private static String getPref(String c) {
-	String d = "${BIBTEXKEY}";
+	//String d = "${BIBTEXKEY}";
 	if (c.equals("arXiv")) {
-	    d += "-eprint";
+	    String d = "arXiv/auto/${BIBTEXKEY}";
+	}
+	else
+	{
+	    String d = "auto/${BIBTEXKEY}";
 	}
 
 	if (Globals.prefs.hasKey("localcopy-fntemplate-" + c)) {

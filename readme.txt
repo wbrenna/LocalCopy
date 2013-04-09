@@ -8,6 +8,10 @@ from journals linked by the DOI system.
 Author
   * Christoph Lehner (clehner // users.sourceforge.net)
 
+  Modified for personal tastes Wilson Brenna 2013-04-03
+  	Updated FAQ and changed file naming to be compatible
+	with JabRef's auto-find conventions.
+
 Build instructions:
   * Run build.xml with target jars (default)
   

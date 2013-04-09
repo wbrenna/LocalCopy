@@ -21,3 +21,7 @@ A:  If you want to use, e.g., a SOCKS proxy, run JabRef with the following comma
  
       http://java.sun.com/j2se/1.5.0/docs/guide/net/properties.html .
 
+      For an http proxy you can run
+
+      java -Dhttp.proxyHost=host -Dhttp.proxyPort=port -jar JabRef-X.jar , 
+
